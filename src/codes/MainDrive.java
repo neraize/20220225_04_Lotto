@@ -102,9 +102,13 @@ public class MainDrive {
 		}
 		
 		// 정리된 당첨번호 확인
+		System.out.print("당첨번호: ");
 		for(int num: winNumbers) {
 			System.out.print(num+" ");
 		}
+		
+		// 보너스 번호 확인
+		System.out.println("보너스번호: "+bonusNum);
 		
 		int correctCount =0;
 		
@@ -121,7 +125,7 @@ public class MainDrive {
 		}
 		else if(correctCount==5) {
 			//보너스번호 로직 추가 필요
-			System.out.println("임시 3등");
+			
 		}
 		else if(correctCount==4) {
 			System.out.println("임시 4등");
