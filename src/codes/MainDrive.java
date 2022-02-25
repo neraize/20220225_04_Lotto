@@ -69,9 +69,9 @@ public class MainDrive {
 		winNumbers[4]=30;
 		winNumbers[5]=31;
 		
-		for(int num: winNumbers) {
-			System.out.print(num+" ");
-		}
+//		for(int num: winNumbers) {
+//			System.out.print(num+" ");
+//		}
 		
 		int correctCount =0;
 		
@@ -83,7 +83,21 @@ public class MainDrive {
 			}
 		}
 		
-		
-		
+		if(correctCount==6) {
+			System.out.println("1등");
+		}
+		else if(correctCount==5) {
+			//보너스번호 로직 추가 필요
+			System.out.println("임시 3등");
+		}
+		else if(correctCount==4) {
+			System.out.println("임시 4등");
+		}
+		else if(correctCount==3) {
+			System.out.println("임시 5등");
+		}
+		else {
+			System.out.println("낙첨");
+		}
 	}
 }
