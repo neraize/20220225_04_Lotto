@@ -69,9 +69,18 @@ public class MainDrive {
 		winNumbers[4]=30;
 		winNumbers[5]=31;
 		
-		
 		for(int num: winNumbers) {
 			System.out.print(num+" ");
+		}
+		
+		int correctCount =0;
+		
+		for(int myNum: myNumbers) {
+			for(int winNum: winNumbers) {
+				if(myNum==winNum) {
+					correctCount++;
+				}
+			}
 		}
 		
 		
