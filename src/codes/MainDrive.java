@@ -60,6 +60,16 @@ public class MainDrive {
 			}
 		}
 		
+		
+		// 임시 당첨 번호 선정 -> 당첨 등수 로직 테스트용
+		winNumbers[0]=10;
+		winNumbers[1]=11;
+		winNumbers[2]=20;
+		winNumbers[3]=21;
+		winNumbers[4]=30;
+		winNumbers[5]=31;
+		
+		
 		for(int num: winNumbers) {
 			System.out.print(num+" ");
 		}
