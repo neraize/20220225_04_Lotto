@@ -60,6 +60,27 @@ public class MainDrive {
 			}
 		}
 		
+		// 보너스 번호 뽑기
+		// 제약사항: 1~45 중 하나. 기존의 당첨번호아 중복X
+		
+		int bonusNum=0;
+		
+		while(true) {
+			int randomNum= (int)(Math.random()*45+1);
+			boolean isDupOk =true;
+			
+			for(int num: winNumbers) {
+				if(randomNum==num) {
+					isDupOk=false;
+					break;
+				}
+			}
+			
+			if(isDupOk) {
+				bonusNum= randomNum;
+				break;
+			}
+		}
 		
 		// 임시 당첨 번호 선정 -> 당첨 등수 로직 테스트용
 //		winNumbers[0]=10;
