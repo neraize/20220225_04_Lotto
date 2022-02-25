@@ -69,7 +69,18 @@ public class MainDrive {
 //		winNumbers[4]=30;
 //		winNumbers[5]=31;
 		
+		// 랜덤으로 만들어진 당첨번호들을  -> 작은수~ 큰수로 정리
+		for(int i=0; i<winNumbers.length; i++) {
+			for(int j=0; j<winNumbers.length-1; j++) {
+				if(winNumbers[j] > winNumbers[j+1]) {
+					int backUp = winNumbers[j];
+					winNumbers[j] = winNumbers[j+1];
+					winNumbers[j+1] = backUp;
+				}
+			}
+		}
 		
+		// 정리된 당첨번호 확인
 		for(int num: winNumbers) {
 			System.out.print(num+" ");
 		}
